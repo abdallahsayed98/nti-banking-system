@@ -50,6 +50,9 @@ const withdarwButton=function(customer){
             console.log('greater than')
             customers[ind].balance=Number.parseInt(customers[ind].balance)-Number.parseInt(withdraw);
         }
+        else{
+            alert("your account balance is can't allow to do this operation");
+        }
     }
     setCustomers(customers);
     showCustomers(customers);
